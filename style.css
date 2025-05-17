@@ -1,1 +1,43 @@
+:root{
+    --cor-um:#f9cbd6;
+    --cor-dois: #f2afbc;
+    --cor_tres: #9e182b;
+    --cor-quatro: #f2e0d2;
 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--cor-um);
+    box-shadow: 1px 1px 4px gray
+    
+}
+
+nav img{
+    width: 20%;
+    height: auto;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner{
+    position: relative;
+    
+}
+
+.banner p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Faz com que fique centralizado*/
+    font-size: 3em; /*aumenta em 3 vezes a font definida no body*/
+    color: whitesmoke;
+
+
+}
