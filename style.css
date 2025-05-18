@@ -4,6 +4,7 @@
     --cor_tres: #9e182b;
     --cor-quatro: #f2e0d2;
     --cor-cinco:whitesmoke;
+    --cor-seis:#b3005e;
 
 }
 
@@ -12,28 +13,39 @@
     padding: 0;
 }
 
+
 .img-nav{
     width: 100%;
     height: auto;
     background-color: var(--cor-um);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .links-nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-color: rgb(249, 243, 243);
-    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
     
 }
 
 .links-nav a{
     text-decoration: none;
-    padding: 10px 25px;
+    padding: 10px 30px;
     font-size: 20px;
-    color: var(--cor-dois);
+    color: var(--cor-seis);
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
+.links-nav a:hover{
+    color: var(--cor-cinco);
+    background-color: var(--cor-seis);
+    border-radius: 10px;
+    transition: 0.3s;
+}
 .banner img{
     width: 100%;
     height: 500px;
@@ -54,7 +66,7 @@
     color: var(--cor-cinco);
     font-size: 50px;
 }
-.banner a{
+.button{
     position: absolute;
     top: 80%;
     left: 50%;
@@ -63,12 +75,61 @@
     padding: 10px 40px;
     border-radius: 10px;
     text-decoration: none;
-    color: var(--cor_tres);
+    color: var(--cor-seis);
     font-size: 30px;
 }
 
 .banner a:hover{
-    background-color: var(--cor_tres);
+    background-color: var(--cor-seis);
     color: whitesmoke;
     scale: 1.1;
+}
+
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 20%;
+  text-align: center;
+  padding: 20px;
+    transition: transform 0.3s;
+}
+
+
+.card h3 {
+  margin-top: 25px;
+  color: #444;
+}
+
+.card p {
+  color: #444;
+  font-size: 20px;
+  margin: 10px 0 20px;
+}
+
+.button2 {
+  background-color: var(--cor-um);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ .button2:hover {
+  background-color: var(--cor-dois);
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
