@@ -100,7 +100,7 @@
 .card {
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);;
   width: 20%;
   text-align: center;
   padding: 20px;
@@ -144,8 +144,9 @@
   justify-content: center;
   margin-top: 100px;
   align-items: center;
-  background-color: #fff8dc;
-  border-radius: 20px;
+  background-color: rgb(249, 243, 243);
+  border-radius: 10px;
+  width: 100%;
 }
 
 .localizacao{
@@ -156,18 +157,44 @@
 
 .container-localizacao p{
   font-size: 35px;
-  text-align: left;
-  color: var(--cor-seis);
+  text-align: center;
+  color: var(--cor_tres);
   font-family:"Red Hat Text", sans-serif;
 }
 
 .container-portifolio{
-  text-align: left;
   margin-top: 100px;
 }
-.container-portifolio h2{
-  margin:10px 10px 10px 10px;
+
+.portifolio-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.portifolio-titulo h2{
+  font-size: 60px;
+  font-family:"Red Hat Text", sans-serif;
+  font-weight: 100;
+  color: var(--cor_tres);
+}
+
+.portifolio-titulo a{
+  margin-left: 30px;
+  font-size: 20px;
+  color: #444;
+  text-decoration: none;
+  border:solid 1px #444;
+  padding: 8px;
+  border-radius: 10px;
+
+}
+
+.portifolio-titulo a:hover{
+  background-color: #444;
+  color: white;
+}
+
 .portifolio-cards{
   display: flex;
   justify-content: center;
@@ -175,7 +202,57 @@
 }
 
 .fotos img{
-  width: 300px;
-  height: 300px;
-  padding: 20px;
+  width: 500px;
+  height: 500px;
+  padding: 25px;
+}
+
+.fotos img:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+button:hover {
+  background-color: #000;
+  color: white;
+}
+
+
+.container-depoimento {
+  max-width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  margin-top: 100px;
+
+}
+
+.depoimento-topo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.icone-whatsapp {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.depoimento-topo h2 {
+  font-size: 16px;
+}
+
+.depoimento-texto {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+}
+
+.depoimento-origem {
+  font-size: 13px;
+  color: #888;
 }
