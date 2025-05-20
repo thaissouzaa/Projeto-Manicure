@@ -14,6 +14,9 @@
     padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 .img-nav{
     width: 100%;
@@ -219,14 +222,14 @@ button:hover {
 
 
 .container-depoimento {
-  max-width: 30%;
+  max-width: 35%;
   border: 1px solid #ccc;
   border-radius: 16px;
   padding: 10px;
   background-color: #fdfdfd;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   font-family: sans-serif;
-  margin-top: 100px;
+  margin-top: 70px;
 
 }
 
@@ -242,17 +245,272 @@ button:hover {
 }
 
 .depoimento-topo h2 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .depoimento-texto {
-  font-size: 15px;
+  font-size: 18px;
   color: #444;
   line-height: 1.5;
   margin: 0 0 10px 0;
 }
 
 .depoimento-origem {
-  font-size: 13px;
+  font-size: 15px;
   color: #888;
+}
+
+
+@media 	(max-width: 600px){
+
+nav{
+  height: 100%;
+}
+
+nav img{
+  height: 60px;
+}
+.img-nav{
+    width: 100%;
+    height: auto;
+    background-color: var(--cor-um);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.links-nav{
+    display: flex;
+    justify-content: left;
+    background-color: rgb(249, 243, 243);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    
+}
+
+.links-nav a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: var(--cor-seis);
+    font-family:"Red Hat Text", sans-serif;
+}
+
+.links-nav a:hover{
+    color: var(--cor-cinco);
+    background-color: var(--cor-seis);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.banner img{
+    width: 100%;
+    height: 200px;
+}
+
+
+.banner{
+    position: relative;
+    text-align:center;
+    margin-top: 2%;
+
+}
+
+.banner p{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%); 
+    font-size: 3em; 
+    color: var(--cor-cinco);
+    font-size: 25px;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+
+
+}
+.button{
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    background-color: var(--cor-cinco);
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cor-seis);
+    font-size: 15px;
+    font-family:"Red Hat Text", sans-serif;
+
+}
+
+.button:hover{
+    background-color: var(--cor-seis);
+    color: whitesmoke;
+}
+
+.container-servicos {
+  display: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  gap: 20px;
+  margin: 0  60px 100px 10%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);;
+  width: 90%;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+
+.card h3 {
+  margin-top: 25px;
+  color: #444;
+  font-family:"Red Hat Text", sans-serif;
+}
+
+.card p {
+  color: #444;
+  font-size: 20px;
+  margin: 10px 0 20px;
+  font-family:"Red Hat Text", sans-serif;
+}
+
+.button2 {
+  background-color: var(--cor-um);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family:"Red Hat Text", sans-serif;
+}
+
+ .button2:hover {
+  background-color: var(--cor-dois);
+}
+
+.container-localizacao{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+  background-color: rgb(249, 243, 243);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.localizacao{
+  width: 1%;
+  padding: 20px;
+
+}
+
+.container-localizacao p{
+  font-size: 35px;
+  text-align: center;
+  color: var(--cor_tres);
+  font-family:"Red Hat Text", sans-serif;
+}
+
+.container-portifolio{
+  margin-top: 100px;
+}
+
+.portifolio-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portifolio-titulo h2{
+  font-size: 60px;
+  font-family:"Red Hat Text", sans-serif;
+  font-weight: 100;
+  color: var(--cor_tres);
+}
+
+.portifolio-titulo a{
+  margin-left: 30px;
+  font-size: 20px;
+  color: #444;
+  text-decoration: none;
+  border:solid 1px #444;
+  padding: 8px;
+  border-radius: 10px;
+
+}
+
+.portifolio-titulo a:hover{
+  background-color: #444;
+  color: white;
+}
+
+.portifolio-cards{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.fotos img{
+  width: 500px;
+  height: 500px;
+  padding: 25px;
+}
+
+.fotos img:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+button:hover {
+  background-color: #000;
+  color: white;
+}
+
+
+.container-depoimento {
+  max-width: 35%;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  margin-top: 70px;
+
+}
+
+.depoimento-topo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.icone-whatsapp {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.depoimento-topo h2 {
+  font-size: 20px;
+}
+
+.depoimento-texto {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+}
+
+.depoimento-origem {
+  font-size: 15px;
+  color: #888;
+}
+
+
 }
