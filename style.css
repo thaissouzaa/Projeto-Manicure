@@ -15,6 +15,7 @@
 
 html{
   scroll-behavior: smooth;
+
 }
 
 .img-nav{
@@ -244,8 +245,8 @@ html{
 }
 
 .fotos img{
-  width: 500px;
-  height: 500px;
+  width: 420px;
+  height: 420px;
   padding: 25px;
   border-radius: 20px;
 }
@@ -262,15 +263,20 @@ button:hover {
 
 .container-footer{
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: left;
+  flex-direction: row;
+  background-color: var(--cor-quatro);
+  width: 100%;
 }
-
 .icons img{
   width: 40px;
   padding: 20px;
 }
 
+.logo-footer img{
+  width: 60%;
+
+}
 
 @media 	(max-width: 600px){
 
