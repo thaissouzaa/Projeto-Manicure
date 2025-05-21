@@ -208,6 +208,7 @@ html{
   width: 500px;
   height: 500px;
   padding: 25px;
+  border-radius: 20px;
 }
 
 .fotos img:hover{
@@ -398,16 +399,17 @@ nav img{
 }
 
 .container-localizacao{
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  display: inline;
+  justify-content: left;
+  margin-top: 50px;
   background-color: rgb(249, 243, 243);
-  width: 100vw;
+  
 }
 
 .container-localizacao iframe{
   width: 200px;
-  height: 200px;}
+  height: 200px;
+  align-content: center;}
 
 
 .localizacao{
@@ -416,7 +418,7 @@ nav img{
 }
 
 .container-localizacao p{
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: var(--cor_tres);
   font-family:"Red Hat Text", sans-serif;
@@ -430,7 +432,6 @@ nav img{
 .portifolio-titulo {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .portifolio-titulo h2{
@@ -466,6 +467,7 @@ nav img{
   width: 150px;
   height: 150px;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .fotos img:hover{
