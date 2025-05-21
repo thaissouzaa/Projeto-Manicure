@@ -8,7 +8,6 @@
 
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -165,6 +164,46 @@ html{
   font-family:"Red Hat Text", sans-serif;
 }
 
+.container-depoimento {
+  max-width: 35%;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  margin-top: 70px;
+
+}
+
+.depoimento-topo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.icone-whatsapp {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.depoimento-topo h2 {
+  font-size: 20px;
+}
+
+.depoimento-texto {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+}
+
+.depoimento-origem {
+  font-size: 15px;
+  color: #888;
+}
+
+
 .container-portifolio{
   margin-top: 100px;
 }
@@ -221,44 +260,15 @@ button:hover {
   color: white;
 }
 
-
-.container-depoimento {
-  max-width: 35%;
-  border: 1px solid #ccc;
-  border-radius: 16px;
-  padding: 10px;
-  background-color: #fdfdfd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  font-family: sans-serif;
-  margin-top: 70px;
-
-}
-
-.depoimento-topo {
+.container-footer{
   display: flex;
-  align-items: center;
-  margin-bottom: 12px;
+  justify-content: center;
+  align-content: center;
 }
 
-.icone-whatsapp {
-  width: 24px;
-  margin-right: 8px;
-}
-
-.depoimento-topo h2 {
-  font-size: 20px;
-}
-
-.depoimento-texto {
-  font-size: 18px;
-  color: #444;
-  line-height: 1.5;
-  margin: 0 0 10px 0;
-}
-
-.depoimento-origem {
-  font-size: 15px;
-  color: #888;
+.icons img{
+  width: 40px;
+  padding: 20px;
 }
 
 
@@ -424,6 +434,45 @@ nav img{
   font-family:"Red Hat Text", sans-serif;
 }
 
+.container-depoimento {
+  max-width: 35%;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  margin-top: 70px;
+
+}
+
+.depoimento-topo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.icone-whatsapp {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.depoimento-topo h2 {
+  font-size: 20px;
+}
+
+.depoimento-texto {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+}
+
+.depoimento-origem {
+  font-size: 15px;
+  color: #888;
+}
+
 .container-portifolio{
   margin-top: 100px;
   padding-left: 0px;
@@ -478,46 +527,6 @@ nav img{
 button:hover {
   background-color: #000;
   color: white;
-}
-
-
-.container-depoimento {
-  max-width: 35%;
-  border: 1px solid #ccc;
-  border-radius: 16px;
-  padding: 10px;
-  background-color: #fdfdfd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  font-family: sans-serif;
-  margin-top: 70px;
-
-}
-
-.depoimento-topo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.icone-whatsapp {
-  width: 24px;
-  margin-right: 8px;
-}
-
-.depoimento-topo h2 {
-  font-size: 20px;
-}
-
-.depoimento-texto {
-  font-size: 18px;
-  color: #444;
-  line-height: 1.5;
-  margin: 0 0 10px 0;
-}
-
-.depoimento-origem {
-  font-size: 15px;
-  color: #888;
 }
 
 
