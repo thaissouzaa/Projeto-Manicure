@@ -165,7 +165,13 @@ html{
   font-family:"Red Hat Text", sans-serif;
 }
 
-.container-depoimento {
+.container-depoimento{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card-depoimento {
   max-width: 35%;
   border: 1px solid #ccc;
   border-radius: 16px;
@@ -174,6 +180,7 @@ html{
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   font-family: sans-serif;
   margin-top: 70px;
+  margin: 20px;
 
 }
 
@@ -205,7 +212,7 @@ html{
 }
 
 
-.container-portifolio{
+.card-portifolio{
   margin-top: 100px;
 }
 
@@ -248,7 +255,6 @@ html{
   width: 420px;
   height: 420px;
   padding: 25px;
-  border-radius: 20px;
 }
 
 .fotos img:hover{
@@ -265,19 +271,41 @@ button:hover {
   display: flex;
   justify-content: left;
   flex-direction: row;
-  background-color: var(--cor-quatro);
+  background-color: #FAF9F6;
   width: 100%;
 }
 .icons img{
   width: 40px;
   padding: 20px;
+  padding-top: 50%;
 }
 
 .logo-footer img{
-  width: 60%;
+  width: 40%;
 
 }
 
+.galeria{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.galeria img{
+  width: 25%;
+  height: 250px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.container-galeria h1{
+  
+}
+
+.galeria img:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
 @media 	(max-width: 600px){
 
 
@@ -440,53 +468,21 @@ nav img{
   font-family:"Red Hat Text", sans-serif;
 }
 
-.container-depoimento {
-  max-width: 35%;
-  border: 1px solid #ccc;
-  border-radius: 16px;
-  padding: 10px;
-  background-color: #fdfdfd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  font-family: sans-serif;
-  margin-top: 70px;
-
+.container-depoimento{
+  display: none;
 }
 
-.depoimento-topo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.icone-whatsapp {
-  width: 24px;
-  margin-right: 8px;
-}
-
-.depoimento-topo h2 {
-  font-size: 20px;
-}
-
-.depoimento-texto {
-  font-size: 18px;
-  color: #444;
-  line-height: 1.5;
-  margin: 0 0 10px 0;
-}
-
-.depoimento-origem {
-  font-size: 15px;
-  color: #888;
-}
 
 .container-portifolio{
-  margin-top: 100px;
+  display: flex;
+  justify-content: center;
   padding-left: 0px;
 }
 
 .portifolio-titulo {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-top: 70px;
 }
 
 .portifolio-titulo h2{
@@ -512,11 +508,6 @@ nav img{
   color: white;
 }
 
-.portifolio-cards{
-  display: flex;
-  justify-content: left;
- 
-}
 
 .fotos img{
   width: 150px;
@@ -533,6 +524,21 @@ nav img{
 button:hover {
   background-color: #000;
   color: white;
+}
+
+.container-footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FAF9F6;
+  width: 100%;
+  align-items: center;
+}
+.icons img{
+  width: 40px;
+  padding: 5px;
+  padding-top: 10%;
+
 }
 
 
