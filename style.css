@@ -147,6 +147,7 @@ html{
   align-items: center;
   background-color: rgb(249, 243, 243);
   border-radius: 10px;
+  margin-top: 70px;
 }
 
 
@@ -221,6 +222,7 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .portifolio-titulo h2{
@@ -266,22 +268,28 @@ button:hover {
   background-color: #000;
   color: white;
 }
+
 footer{
   width: 100%;
+  background-color: #f7f4ed;
+  align-items: center;
 }
 
 .footer{
   display: flex;
   justify-content: left;
-  align-items: center;
-  background-color: #f7f4ed;
+  flex-direction: column;
 }
 
+
 .icons{
-  padding-left: 10%;
+  padding-left: 45%;
+  align-items: center;
 }
-.logo-footer img{
-  width: 40%;
+
+
+footer img{
+  width: 20%;
 
 }
 
@@ -302,9 +310,10 @@ footer{
 
 .container-galeria img{
   width: 25%;
-  height: 250px;
+  height: 300px;
   padding: 20px;
   border-radius: 20px;
+
 }
 
 .container-galeria img:hover{
@@ -313,7 +322,7 @@ footer{
 }
 
 .card-galeria{
-  align-items: center;
+  align-items: centers;
 }
 
 
@@ -506,7 +515,6 @@ nav img{
   font-family:"Red Hat Text", sans-serif;
   font-weight: 100;
   color: var(--cor_tres);
-  margin: 20px;
   width: 100%;
 }
 
@@ -516,8 +524,8 @@ nav img{
   color: #444;
   text-decoration: none;
   border:solid 1px #444;
-  padding: 8px;
-  border-radius: 10px;
+  padding: 5px;
+  border-radius: 8px;
 
 }
 
@@ -528,8 +536,8 @@ nav img{
 
 
 .fotos img{
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   padding: 10px;
   margin-left: 0;
   border-radius: 10px;
