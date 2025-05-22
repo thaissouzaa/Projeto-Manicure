@@ -97,7 +97,7 @@ html{
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin: 100px 100px 0 0;
+  margin: 100px 0 0 0;
 }
 
 .card {
@@ -144,11 +144,9 @@ html{
 
 .container-localizacao{
   display: flex;
-  margin-top: 100px;
   align-items: center;
   background-color: rgb(249, 243, 243);
   border-radius: 10px;
-  width: 100%;
 }
 
 
@@ -175,6 +173,7 @@ html{
   justify-content: center;
   margin-top: 70px;
   margin-bottom: 70px;
+  width: 100%s;
   
 }
 
@@ -218,8 +217,7 @@ html{
   color: #888;
 }
 
-
-.portifolio-titulo {
+.portifolio-titulo{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,13 +231,13 @@ html{
 }
 
 .portifolio-titulo a{
-  margin-left: 30px;
   font-size: 20px;
   color: #444;
   text-decoration: none;
   border:solid 1px #444;
   padding: 8px;
   border-radius: 10px;
+  margin-left: 10px;
 
 }
 
@@ -268,41 +266,54 @@ button:hover {
   background-color: #000;
   color: white;
 }
-
-.container-footer{
-  display: flex;
-  justify-content: left;
-  flex-direction: row;
-  background-color: #FAF9F6;
+footer{
   width: 100%;
 }
-.icons img{
-  width: 40px;
-  padding: 20px;
-  padding-top: 50%;
+
+.footer{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #f7f4ed;
 }
 
+.icons{
+  padding-left: 10%;
+}
 .logo-footer img{
   width: 40%;
 
 }
 
-.galeria{
+.icons img{
+  width: 40px;
+  padding: 20px;
+}
+
+.direitos-reservados{
+  text-align: center;
+}
+
+.container-galeria{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.galeria img{
+.container-galeria img{
   width: 25%;
   height: 250px;
   padding: 20px;
   border-radius: 20px;
 }
 
-.galeria img:hover{
+.container-galeria img:hover{
   transform: scale(1.1);
   transition: 1s;
+}
+
+.card-galeria{
+  align-items: center;
 }
 
 
@@ -397,7 +408,7 @@ nav img{
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
-  margin: 0 0 0s 10%;
+  margin: 0 0 0 0;
 }
 
 .card {
@@ -460,18 +471,20 @@ nav img{
 
 .localizacao{
   width: 50%;
+  padding: 10px;
 
 }
 
 .localizacao-texto p{
   font-family:"Red Hat Text", sans-serif;
   font-size: 10px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .localizacao-texto h3{
   font-size: 15px;
   font-family:"Red Hat Text", sans-serif;
+  padding-top: 20px;
 }
 
 .container-depoimento{
@@ -486,7 +499,6 @@ nav img{
 .portifolio-titulo {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
 }
 
 .portifolio-titulo h2{
@@ -495,6 +507,7 @@ nav img{
   font-weight: 100;
   color: var(--cor_tres);
   margin: 20px;
+  width: 100%;
 }
 
 .portifolio-titulo a{
@@ -532,19 +545,37 @@ button:hover {
   color: white;
 }
 
-.container-footer{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #FAF9F6;
+footer{
   width: 100%;
+  background-color: #f7f4ed;
   align-items: center;
 }
+
+.footer{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+
+.logo-footer img{
+  width: 30%;
+
+}
+
+.icons{
+  align-items: center;
+  padding-bottom: 10px;
+}
+
 .icons img{
   width: 20px;
   padding: 5px;
-  padding-top: 10%;
+}
 
+.direitos-reservados{
+  text-align: center;
+  font-size: 10px;
 }
 
 
