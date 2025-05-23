@@ -413,7 +413,7 @@ nav img{
 
 .container-servicos {
   display: wrap;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
@@ -424,9 +424,9 @@ nav img{
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);;
-  width: 90%;
+  width: 35%;
   text-align: center;
-  padding: 20px;
+  flex-wrap: wrap;
   transition: transform 0.3s;
 }
 
@@ -508,6 +508,8 @@ nav img{
 .portifolio-titulo {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .portifolio-titulo h2{
@@ -515,7 +517,7 @@ nav img{
   font-family:"Red Hat Text", sans-serif;
   font-weight: 100;
   color: var(--cor_tres);
-  width: 100%;
+  
 }
 
 .portifolio-titulo a{
@@ -567,7 +569,7 @@ footer{
 
 
 .logo-footer img{
-  width: 30%;
+  width: 25%;
 
 }
 
@@ -586,5 +588,27 @@ footer{
   font-size: 10px;
 }
 
+.container-galeria{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container-galeria img{
+  width: 20%;
+  height: 140px;
+  padding: 10px;
+
+}
+
+.container-galeria img:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.card-galeria{
+  align-items: center;
+}
 
 }
