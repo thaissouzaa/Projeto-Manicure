@@ -302,29 +302,23 @@ footer img{
   text-align: center;
 }
 
-.container-galeria{
+.card-galeria{
   display: flex;
   justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
 }
-
 .container-galeria img{
   width: 25%;
   height: 300px;
   padding: 20px;
   border-radius: 20px;
-
 }
 
 .container-galeria img:hover{
   transform: scale(1.1);
   transition: 1s;
 }
-
-.card-galeria{
-  align-items: centers;
-}
-
 
 @media 	(max-width: 400px)  {
 
@@ -588,27 +582,24 @@ footer{
   font-size: 10px;
 }
 
-.container-galeria{
+.card-galeria{
   display: flex;
   justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
 }
+
+
 
 .container-galeria img{
-  width: 20%;
-  height: 140px;
-  padding: 10px;
-
+  width: 25%;
+  height: 100px;
+  padding: 5px;
+  margin-left: 0;
 }
-
 .container-galeria img:hover{
   transform: scale(1.1);
   transition: 1s;
-}
-
-.card-galeria{
-  align-items: center;
 }
 
 }
