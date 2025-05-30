@@ -1,9 +1,12 @@
-const abrir_botao = document.getElementById("abrir-popup")
+const abrir_botao = document.querySelectorAll(".abrir-popup")
 const fechar_botao = document.getElementById("fechar-popup")
 const popup = document.getElementById("popup")
 
-abrir_botao.addEventListener("click",function(){
+
+abrir_botao.forEach(botao => {
+    botao.addEventListener("click",function(){
     popup.style.display = "block"
+    })
 });
 
 fechar_botao.addEventListener("click", function(){

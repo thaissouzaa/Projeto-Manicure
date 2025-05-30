@@ -81,7 +81,7 @@ html{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   margin: 100px 0 0 0;
 }
 
@@ -102,7 +102,7 @@ html{
   background-color: #fff;
   border-radius: 15px;
    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);;
-  width: 20%;
+  width: 25%;
   text-align: center;
   padding: 20px;
   transition: transform 0.3s;
@@ -123,6 +123,7 @@ html{
   font-size: 20px;
   margin: 10px 0 20px;
   font-family:"Red Hat Text", sans-serif;
+  margin-top: 25px;
 }
 
 .button2 {
@@ -336,6 +337,7 @@ footer img{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-out;
 }
 
 .container-popup{
@@ -344,6 +346,17 @@ footer img{
     height: auto;
     border-radius: 8px;
     transform: translate(50%,50%);
+}
+
+.popup-topo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-topo img{
+  width: 20px;
+  height: 20px;
 }
 
 .popup-text{
@@ -360,6 +373,7 @@ footer img{
 
 .popup-text li{
   padding: 5px;
+  height: auto;
 }
 
 .close{
