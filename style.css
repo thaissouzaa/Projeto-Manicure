@@ -73,26 +73,6 @@ html{
     font-family: "Instrument Serif", serif;
     font-weight: 100;
 
-
-}
-.button{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: var(--cor-cinco);
-    padding: 10px 40px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--cor-seis);
-    font-size: 30px;
-    font-family:"Red Hat Text", sans-serif;
-
-}
-
-.button:hover{
-    background-color: var(--cor-seis);
-    color: whitesmoke;
 }
 
   /*CARDS DE SERVIÇO, VALORES E PACOTES*/
@@ -103,6 +83,19 @@ html{
   justify-content: center;
   gap: 20px;
   margin: 100px 0 0 0;
+}
+
+.card-topo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-topo h3{
+  margin: 0 auto;
+  text-align: center;
+  flex: 1;
 }
 
 .card {
@@ -333,6 +326,47 @@ footer img{
 .container-galeria img:hover{
   transform: scale(1.1);
   transition: 1s;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-popup{
+    background-color: white;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    transform: translate(50%,50%);
+}
+
+.popup-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family:"Red Hat Text", sans-serif;
+}
+
+.popup-text h1{
+  font-weight: 100;
+  padding: 20px;
+}
+
+.popup-text li{
+  padding: 5px;
+}
+
+.close{
+    float: left;
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
   /*MEDIA QUERRY PARA SE ADAPTAR A SMARTPHONE*/
