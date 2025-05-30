@@ -18,3 +18,21 @@ window.addEventListener("click", function(evento){
         popup.style.display = "none";
     }
 });
+
+const botao_screen = getElementById("botao_screen");
+
+window.onscroll = function(){
+    if (document.documentElement.scrollTop > 100){
+        botao_screen.style.display= "block";
+    }
+    else {
+        botao_screen.style.display= "none";
+    }
+};
+
+    window.addEventListener("click", function() {
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+    });
