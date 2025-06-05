@@ -92,6 +92,10 @@ html{
   position: relative;
 }
 
+.card-topo img{
+  width: 35px;
+}
+
 .card-topo h3{
   margin: 0 auto;
   text-align: center;
@@ -311,22 +315,66 @@ footer img{
 
   /*GALERIA DA PÁGINA GALERIA*/
 
+.botoes {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.botoes button {
+    background-color: transparent;
+    color: #6e5846; /* Marrom acinzentado */
+    border: 2px solid #d6c6b8; /* Bege acinzentado */
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-size: 15px;
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    position: relative;
+}
+
+/* Hover elegante */
+.botoes button:hover {
+    background-color: #f3ebe5;
+    border-color: #c5b4a4;
+    color: #4f392c;
+}
+
+/* Botão ativo */
+.botoes button.ativo {
+    background-color: #e5d6c7;
+    border-color: #b49f8b;
+    color: #3a2920;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    .botoes button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+
+
 .card-galeria{
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-}
-.container-galeria img{
-  width: 25%;
-  height: 300px;
-  padding: 20px;
-  border-radius: 20px;
+  width: 100%;
 }
 
-.container-galeria img:hover{
-  transform: scale(1.1);
-  transition: 1s;
+.container-galeria img{
+  width: 95%;
+  height: 300px;
+  padding: 10px;
 }
 
 .popup{
@@ -338,6 +386,8 @@ footer img{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.abrir-popup
 
 .container-popup{
     background-color: white;
@@ -386,21 +436,27 @@ footer img{
     margin-left: 10px;
 }
 
-#botao_screen{
+.botao_screen{
   display: none;
   position: fixed;
+  justify-content: center;
   bottom: 30px;
   right: 30px;
   z-index: 1000;
-  font-size: 24px;
-  background-color: #333;
-  color: white;
   border: none;
-  border-radius: 50%;
-  padding: 12px;
+  border-radius: 100%;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
+
+.botao_screen img{
+  width: 50px;
+}
+
+.botao_screen:hover{
+  background-color: #b3005e;
+}
+
 
   /*MEDIA QUERRY PARA SE ADAPTAR A SMARTPHONE*/
 
