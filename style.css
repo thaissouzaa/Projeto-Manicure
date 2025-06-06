@@ -458,6 +458,11 @@ footer img{
 }
 
 
+.carousel-item img{
+  width: 700px;
+  height: 450px;
+}
+
   /*MEDIA QUERRY PARA SE ADAPTAR A SMARTPHONE*/
 
 
@@ -566,7 +571,7 @@ nav img{
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);;
-  width: 35%;
+  width: 90%;
   text-align: center;
   flex-wrap: wrap;
   transition: transform 0.3s;
